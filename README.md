@@ -46,8 +46,8 @@ crontab -e
 When in the crontab, python scripts are scheduled by the following format:
 m h dom mon dow /usr/bin/python3 /absolute/path/to/script/
 
-The Raspberry Pi will already have commented out lines scheduling the two scripts, automaticEmailSender.py and dataAppender.py to run every minute.
-To edit how often the scripts are run, edit the 5 asterisks to specify how often you want the scripts ran.
-More information and help on scheduling cron jobs can be found here: https://crontab.guru
+The Raspberry Pi will already have two lines scheduling the two scripts, automaticEmailSender.py and dataAppender.py to run every minute.
+To edit how often the scripts are run, edit the 5 asterisks (*) to specify how often you want the scripts ran.
+Note that the two lines will at first be commented out, simply remove the hashtag (#) and save to start the scheduled tasks.
 
-Uncomment the lines by removing the hashtag to start the scheduled scripts.
+More information and help on scheduling cron jobs can be found here: https://crontab.guru
