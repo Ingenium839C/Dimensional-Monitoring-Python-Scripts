@@ -3,36 +3,36 @@ Python files for the Raspberry Pi are here
 
 IMPORTANT ADDITIONAL INFORMATION:
 
------Raspberry Pi Login Details-----
+_**-----Raspberry Pi Login Details-----**_
 Hostname: 839C.local 
 Username: 839C 
 Password: 292629Will
------Raspberry Pi Login Details-----
+_**-----Raspberry Pi Login Details-----**_
 
------README for automaticEmailSender.py-----
-Line 13: email_receivers = ['dimensionmonitoring839c@gmail.com', 'recipent@example.com']  # List of recipients
-This is where any receivers of the data can be edited. 
-Since data is sent through email, each receiver's email should be written here.
+_**-----README for automaticEmailSender.py-----**_
+**Line 13: email_receivers = ['dimensionmonitoring839c@gmail.com', 'recipent@example.com']  # List of recipients**
+(This is where any receivers of the data can be edited. 
+Since data is sent through email, each receiver's email should be written here.)
 
-Line 16: file_path = "/home/willh/Documents/Ingenium/sensorData.xlsx"
-This is the specification for the file path of the spreadsheet file. 
+**Line 16: file_path = "/home/willh/Documents/Ingenium/sensorData.xlsx"**
+(This is the specification for the file path of the spreadsheet file. 
 In a Raspberry Pi this should be the absolute file path, and should match the file path used in the dataAppender.py script. 
-Note that dataAppender.py will automatically create a spreadsheet file if none exist at the file path, so the file path in automaticEmailSender.py simply needs to match that in dataAppender.py, and the parent folders should exist.
------README for automaticEmailSender.py-----
+Note that dataAppender.py will automatically create a spreadsheet file if none exist at the file path, so the file path in automaticEmailSender.py simply needs to match that in dataAppender.py, and the parent folders should exist.)
+_**-----README for automaticEmailSender.py-----**_
 
------README for dataAppender.py-----
-Line 16: file_path = "/home/willh/Documents/Ingenium/sensorData.xlsx"
-This is the specification for the file path of the spreadsheet file. 
+**-----README for dataAppender.py-----**__
+**Line 16: file_path = "/home/willh/Documents/Ingenium/sensorData.xlsx"**
+(This is the specification for the file path of the spreadsheet file. 
 In a Raspberry Pi this should be the absolute file path, and should match the file path used in the dataAppender.py script. 
-Note that dataAppender.py will automatically create a spreadsheet file if none exist at the file path, so the file path in automaticEmailSender.py simply needs to match that in dataAppender.py, and the parent folders should exist.
+Note that dataAppender.py will automatically create a spreadsheet file if none exist at the file path, so the file path in automaticEmailSender.py simply needs to match that in dataAppender.py, and the parent folders should exist.)
 
-Lines 29-34:
-This is where the data to be appended into the spreadsheet is set.
+**Lines 29-34:**
+(This is where the data to be appended into the spreadsheet is set.
 Currently, since the Raspberry Pi was unable to connect to the sensor via I2C, the code here uses random numbers for placeholder values.
-Set the variable "data" to the value of the data you want to append to the spreadsheet, replacing the code within these lines (since it sets data to random numbers).
------README for dataAppender.py-----
+Set the variable "data" to the value of the data you want to append to the spreadsheet, replacing the code within these lines (since it sets data to random numbers).)
+**-----README for dataAppender.py-----**__
 
------README for crontab scheduling-----
+**-----README for crontab scheduling-----**__
 To edit the crontab, type the following command into the Raspberry Pi terminal: 
 crontab -e
 
@@ -44,4 +44,4 @@ To edit how often the scripts are run, edit the 5 asterisks to specify how often
 More information and help on scheduling cron jobs can be found here: https://crontab.guru
 
 Uncomment the lines by removing the hashtag to start the scheduled scripts.
------README for crontab scheduling-----
+**-----README for crontab scheduling-----**__
