@@ -4,9 +4,11 @@ Python files for the Raspberry Pi are here
 IMPORTANT ADDITIONAL INFORMATION:
 
 _**-----Raspberry Pi Login Details-----**_
+
 Hostname: 839C.local 
 Username: 839C 
 Password: 292629Will
+
 _**-----Raspberry Pi Login Details-----**_
 
 _**-----README for automaticEmailSender.py-----**_
